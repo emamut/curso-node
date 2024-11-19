@@ -1,5 +1,9 @@
 const fs = require('node:fs');
 
+// const { promisify } = require('node:util');
+
+// const readFilePromise = promisify(fs.readFile);
+
 console.log('Leyendo el primer archivo...');
 fs.readFile('archivo.txt', 'utf8', (err, text) => {
   console.log('Primer texto:', text);
