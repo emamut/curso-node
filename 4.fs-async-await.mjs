@@ -4,16 +4,14 @@
 // const { promisify } = require('node:util');
 // const readFilePromise = promisify(fs.readFile);
 
-const fs = require('node:fs/promises');
+import { readFile } from 'node:fs/promises';
 
 console.log('Leyendo el primer archivo...');
-fs.readFile('archivo.txt', 'utf8').then((text) => {
-  console.log('Primer texto:', text);
-});
+const text = await readFile('archivo.txt', 'utf8');
+console.log('Primer texto:', text);
 
 console.log('--> Hacer cosas mientras lee el archivo...');
 
 console.log('Leyendo el segundo archivo...');
-fs.readFile('archivo2.txt', 'utf8').then((text) => {
-  console.log('Segundo texto:', text);
-});
+const secondText = await readFile('archivo2.txt', 'utf8');
+console.log('Segundo texto:', secondText);
