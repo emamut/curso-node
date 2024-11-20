@@ -9,6 +9,5 @@ fs.readdir('.')
   .catch((err) => {
     if (err) {
       console.log('Error al leer el directorio:', err);
-      return;
     }
   });

@@ -5,7 +5,7 @@ import {
   cpus,
   freemem,
   totalmem,
-  uptime,
+  uptime
 } from 'node:os';
 
 console.log('Información del sistema operativo:');

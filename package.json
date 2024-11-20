@@ -1,12 +1,30 @@
 {
-  "name": "curso-node",
+  "name": "learning-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emamut/learning-node.git"
+  },
+  "keywords": [
+    "curso",
+    "node",
+    "nodejs",
+    "emamut"
+  ],
+  "author": "Faber Andrés Vergara <emamut@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "picocolors": "1.1.1"
+  },
+  "eslintConfig": {
+    "extends": "semistandard"
+  },
+  "devDependencies": {
+    "semistandard": "^17.0.0"
+  }
 }
